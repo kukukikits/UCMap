@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>热度图图层</title>
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.14/3.14/esri/css/esri.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        #main {
+            position: relative;
+            width: 1020px;
+            padding: 20px;
+            margin: auto;
+        }
+        #heatmapArea {
+            position: relative;
+            float: left;
+            width: 800px;
+            height: 600px;
+            border: 1px dashed black;
+        }
+        #configArea {
+            position: relative;
+            float: left;
+            width: 200px;
+            padding: 15px;
+            padding-top: 0;
+            padding-right: 0;
+        }
+        .btn {
+            margin-top: 25px;
+            padding: 10px 20px 10px 20px;
+            -moz-border-radius: 15px;
+            -o-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            border: 2px solid black;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+        #map {
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+    <script type="text/javascript" src="config/dojoConfig.js">
+    </script>
+    <script src="http://localhost/arcgis_js_api/library/3.14/3.14/init.js"></script>
+    <script src="UCMapWebGIS/heatmap/heatmap.js"></script>
+   <!-- <script type="text/javascript" src="UCMapWebGIS/heatmap/mapServices.js"></script>-->
+    <script type="text/javascript">
+        require(["heatmap/publishModule", "heatmap/JavaScript", "dojo/domReady!"],
+            function (publishModule, JavaScript) {
+                
+                var p = new publishModule();
+                //var p = new JavaScript();
+               // p.postCreate();
+                p.createHeatMap();
+            });
+
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="heatmapArea">
+            <div id="heatLayer"></div>
+            <div id="map"></div>
+        </div>
+        
+        <div id="configArea">  
+            <br />
+            <div id="tog" class="btn">开关热度图图层</div>
+            <div id="tog2" class="btn">开关树木点图层</div>
+        </div>
+    </div>
+
+</body>
+</html>
