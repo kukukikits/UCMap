@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html lang="en" class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud network DVR - ProtectWise</title>
+    <script src="/js/vendor/modernizr.custom.min.js"></script>
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,500,700,800">-->
+   <link rel="stylesheet" href="/css/main2.css">
+
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.14/3.14/dijit/themes/soria/soria.css" />
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.14/3.14/esri/css/esri.css" />
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.14/3.14/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="UCMapWebGIS/widgets/themes/darkangel/darkangel.css" />
+    <link rel="stylesheet" href="UCMapWebGIS/widgets/themes/darkangel/override.css" />
+    <link rel="stylesheet" href="/css/main.css">
+
+    <style>
+        #mapDiv {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }      
+    </style>
+    <script src="config/dojoConfig.js"></script>
+    <script src="http://localhost/arcgis_js_api/library/3.14/3.14/init.js"></script>
+    <script src="config/map.service.js"></script>
+    <script type="text/javascript">
+      
+    </script>
+</head>
+
+<body class="tundra claro">
+    
+    <nav class="navbar wrap-group">
+
+        <div id="panelTop" class="bg rounded shadow">
+            <!-- Panel 
+            <div id="panelTitle">
+                <div id="panelLogo"><img id="logo" src="images/logo.png" style="height:100%" alt="Logo" /></div>
+                <div id="panelText">
+                    <a href="/platform/">首页</a>
+                    <a style="cursor:pointer" id="view-resources" >地图资源</a>
+                    <a style="cursor:pointer" id="editor">编辑工具</a>
+                    <a style="cursor:pointer" id="view-map">地图浏览</a>
+                    <a class="btn-menu toggle-menu" href="#more">More</a>
+                </div>
+                <div id="panelSearch">
+                    <div id="panelGeocoder"></div>                  
+                </div>
+                <div id="btnLocate"></div>
+            </div>Title -->
+        </div>
+    </nav>
+
+    <nav class="nav-extended" id="more">
+        
+        <a class="btn btn-primary" data-toggle="modal" href="#request-form">Request Demo</a>
+
+        <ul class="text-upper menu-defaults">
+            <li><a class="page-load" href="/">Home</a>
+            <li><a class="page-load" href="/platform/">Platform</a>
+            <li><a class="page-load" href="/company/">Company</a>
+            <li><a class="page-load" href="/news/">News</a>
+        </ul>
+
+        <ul class="text-upper">
+            <li><a class="page-load" href="/careers/">Careers</a>
+            <li><a class="page-load" href="/resources/">Resources</a>
+            <li><a class="page-load" href="/contact/">Contact us</a>
+            <li><a class="page-load" href="/support/">Support</a>
+        </ul>
+
+        <ul>
+            <li><a class="page-load" href="/terms/">Terms of service</a>
+            <li><a class="page-load" href="/privacy/">Privacy policy</a>
+        </ul>
+
+        <ul class="list-inline list-unstyled list-social">
+            <li><a title="Twitter" href="https://twitter.com/protectwise" target="_blank"><i class="font-icon font-icon-twitter"></i></a>
+            <li><a title="Facebook" href="https://www.facebook.com/protectwiseinc?ref=hl" target="_blank"><i class="font-icon font-icon-facebook"></i></a>
+            <li><a title="Linked In" href="https://www.linkedin.com/company/3087510" target="_blank"><i class="font-icon font-icon-linked-in"></i></a>
+        </ul>
+    </nav>
+
+
+    <div class="wrap-group full-height level">
+        <!-- todo: add active-state on load? -->
+        
+        <div id="mapDiv">
+            <!--下面的data-dojo-type设置会导致一个warning:WidgetContainer自动启动-->
+            <div data-dojo-type="UCMapWebGIS/widgets/WidgetContainer" id='widgetContainer'></div>
+            <div id="mapPointPosition" style="background-color:whitesmoke;font-weight:bolder;font-size:smaller;position:absolute;padding:3px;left:30px;bottom:6px;z-index:99;"></div>     
+                
+        </div>
+        
+            
+        <button id="basicFadeButton2" style="position:absolute;left:60px;top:60px;">Fade It In Slow!</button>  
+       
+        
+            
+          
+        
+    </div>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="/js/main.bundle.js"></script>
+
+</body>
+</html>
