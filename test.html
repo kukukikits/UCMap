@@ -11,16 +11,16 @@
 <head>
     <meta charset="UTF-8">
     <title>UCMap test system</title>
-    <script src="/js/vendor/modernizr.custom.min.js"></script>
+    <script src="/UCMap/js/vendor/modernizr.custom.min.js"></script>
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,500,700,800">-->
-   <link rel="stylesheet" href="/css/main2.css">
+   <link rel="stylesheet" href="/UCMap/css/main2.css">
 
     <link rel="stylesheet" href="https://js.arcgis.com/3.18//dijit/themes/soria/soria.css" />
     <link rel="stylesheet" href="https://js.arcgis.com/3.18/esri/css/esri.css" />
     <link rel="stylesheet" href="https://js.arcgis.com/3.18//dijit/themes/claro/claro.css">
-    <link rel="stylesheet" href="UCMapWebGIS/widgets/themes/darkangel/darkangel.css" />
-    <link rel="stylesheet" href="UCMapWebGIS/widgets/themes/darkangel/override.css" />
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/UCMap/UCMapWebGIS/widgets/themes/darkangel/darkangel.css" />
+    <link rel="stylesheet" href="/UCMap/UCMapWebGIS/widgets/themes/darkangel/override.css" />
+    <link rel="stylesheet" href="/UCMap/css/main.css">
 
     <style>
         #mapDiv {
@@ -30,9 +30,9 @@
             height: 100%;
         }      
     </style>
-    <script src="config/dojoConfig.js"></script>
+    <script src="/UCMap/config/dojoConfig.js"></script>
     <script src="https://js.arcgis.com/3.18/"></script>
-    <script src="config/map.service.js"></script>
+    <script src="/UCMap/config/map.service.js"></script>
 </head>
 
 <body class="tundra claro">
@@ -94,21 +94,16 @@
         
         <div id="mapDiv">
             <!--下面的data-dojo-type设置会导致一个warning:WidgetContainer自动启动-->
-            <div data-dojo-type="UCMapWebGIS/widgets/WidgetContainer" id='widgetContainer'></div>
+            <div data-dojo-type="/UCMap/UCMapWebGIS/widgets/WidgetContainer" id='widgetContainer'></div>
             <div id="mapPointPosition" style="background-color:whitesmoke;font-weight:bolder;font-size:smaller;position:absolute;padding:3px;left:30px;bottom:6px;z-index:99;"></div>     
                 
         </div>
         
             
-        <button id="basicFadeButton2" style="position:absolute;left:60px;top:60px;">Fade It In Slow!</button>  
-       
-        
-            
-          
-        
+        <button id="basicFadeButton2" style="position:absolute;left:60px;top:60px;">Fade It In Slow!</button>         
     </div>
-    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-    <script src="/js/main.bundle.js"></script>
+    <script>window.jQuery || document.write('<script src="/UCMap/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="/UCMap/js/main.bundle.js"></script>
 
 </body>
 </html>
