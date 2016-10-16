@@ -1,7 +1,7 @@
 ﻿define(["dojo/_base/declare", "dojo/topic", "dojo/_base/Color", "dojo/query", "dojo/dom-style", "dojo/dom-attr", "dojo/on", "dojo/_base/lang",
     "esri/graphic", "esri/toolbars/draw", "esri/symbols/TextSymbol",
     "esri/symbols/SimpleLineSymbol", "esri/symbols/SimpleMarkerSymbol", "esri/symbols/SimpleFillSymbol", "esri/symbols/Font",
-    "./_BaseWidget", "dijit/_WidgetsInTemplateMixin", "dojo/text!./templates/DrawWidget.html",
+    "./BaseWidget", "dijit/_WidgetsInTemplateMixin", "dojo/text!./templates/DrawWidget.html",
     "dijit/form/DropDownButton", "dijit/form/NumberSpinner", "dijit/ColorPalette", "dijit/form/TextBox"
     ],
     function (declare, topic, Color, query, domStyle, domAttr, on, lang, Graphic, Draw, TextSymbol, SimpleLineSymbol, SimpleMarkerSymbol, SimpleFillSymbol, Font,

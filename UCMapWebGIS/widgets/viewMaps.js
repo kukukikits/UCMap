@@ -7,7 +7,7 @@
     "dojo/on",
     "dojo/_base/lang",
     "dijit/form/CheckBox",
-    "./_BaseWidget",
+    "./BaseWidget",
     "config/commonConfig",
     "dijit/_WidgetsInTemplateMixin",
     "dojo/text!./templates/TocWidget.html",

@@ -7,7 +7,7 @@
     "dojo/on",
     "dojo/_base/lang",
     "dijit/form/CheckBox",
-    "./_BaseWidget",
+    "./BaseWidget",
     "dijit/_WidgetsInTemplateMixin",
     "dojo/text!./templates/TocWidget.html",
     "dijit/form/HorizontalSlider"],

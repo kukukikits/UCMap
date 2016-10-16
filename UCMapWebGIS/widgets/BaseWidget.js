@@ -1,7 +1,7 @@
 define(["dojo/_base/declare", "dojo/_base/array", "dojo/query", "dojo/dom-attr", "dojo/dom-style", "dojo/on", "dojo/_base/lang",
-    "./_Widget", "dojo/text!./templates/_BaseWidget.html"],
-    function (declare, array, query, domAttr, domStyle, on, lang, _Widget, template) {
-	return declare(_Widget, {
+    "./Widget", "dojo/text!./templates/BaseWidget.html"],
+    function (declare, array, query, domAttr, domStyle, on, lang, Widget, template) {
+	return declare(Widget, {
 		constructor: function(/*Object*/ params) {
 			this.connects = [];
 			this.widgets = {};
@@ -60,7 +60,7 @@ define(["dojo/_base/declare", "dojo/_base/array", "dojo/query", "dojo/dom-attr",
 		    }
 
 		    this.inherited(arguments);
-		    console.log("_BaseWidget startup.");
+		    console.log("BaseWidget startup.");
 		},
 
 		shutdown: function() {
