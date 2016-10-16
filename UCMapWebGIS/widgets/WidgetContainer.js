@@ -1,5 +1,5 @@
 ﻿define(["dojo/_base/declare", "dojo/_base/window","dojo/_base/array", "dojo/query", "dojo/topic", "dojo/dom-style", "dojo/on", "dojo/fx", "dojo/_base/fx", "dojo/_base/lang", "dojo/dom-attr", "dojo/dom-class", "dojo/dom-geometry", "dojo/NodeList-fx",
-    "./ContainedWidgetFrame","./MoveableWidgetFrame", "dijit/_Widget", "dijit/_Container", "dojo/dnd/Moveable", "dijit/_TemplatedMixin", "dojo/text!./templates/WidgetContainer.html"],
+    "UCMapWebGIS/widgets/ContainedWidgetFrame","UCMapWebGIS/widgets/MoveableWidgetFrame", "dijit/_Widget", "dijit/_Container", "dojo/dnd/Moveable", "dijit/_TemplatedMixin", "dojo/text!./templates/WidgetContainer.html"],
     function (declare, win,array, query, topic, domStyle, on, coreFx, fx, lang, domAttr, domClass, domGeom, nodeListFx, ContainedWidgetFrame, MoveableWidgetFrame, _Widget, _Container, Moveable, _TemplatedMixin, template) {
         return declare([_Widget, _TemplatedMixin, _Container], {
             showHideButton: null,
