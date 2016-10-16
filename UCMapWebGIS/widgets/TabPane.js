@@ -1,6 +1,6 @@
 ﻿define(['dojo/dom', "dojo/dom-construct", "dojo/_base/window", "dojo/_base/declare", "dojo/_base/array", "dojo/query", "dojo/topic", "dojo/dom-attr", "dojo/dom-style", "dojo/on", "dojo/_base/lang", "dojo/fx", "dojo/_base/fx", "dojo/dom-geometry",
     "dijit/layout/TabContainer", "dijit/layout/ContentPane", 
-    "./_Widget", "dojo/text!./templates/TabPane.html"],
+    "./Widget", "dojo/text!./templates/TabPane.html"],
     function (dom, domConstruct, win, declare, array, query, topic, domAttr, style, on, lang, coreFx, fx, domGeom, TabContainer, ContentPane, _Widget, template) {
         return declare(_Widget, {
             tabContainer: null,//用来存储模板中的tabContainer节点
