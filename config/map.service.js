@@ -16,10 +16,11 @@ require([
     "esri/dijit/LayerList",
     "UCMapWebGIS/widgets/TocWidget",
     "UCMapWebGIS/widgets/DrawWidget",
-    "UCMapWebGIS/widgets/_BaseWidget",
+    "UCMapWebGIS/widgets/BaseWidget",
     "UCMapWebGIS/widgets/MoveableWidgetFrame", "UCMapWebGIS/widgets/TabPane",
     "dijit/layout/TabContainer", "dijit/layout/ContentPane",
     "dijit/_TemplatedMixin",
+
     "dojo/text!../UCMap/UCMapWebGIS/widgets/templates/PanelTitle.html",
     "config/commonConfig",
     "dojo/string","dijit/form/Form", "dijit/form/Button","dijit/form/ValidationTextBox",
@@ -37,7 +38,7 @@ require([
         LayerList,
         TocWidget,
         DrawWidget,
-        _BaseWidget,
+        BaseWidget,
         MoveableWidgetFrame,TabPane,
         TabContainer,ContentPane,
         _TemplatedMixin, template,
@@ -69,7 +70,7 @@ require([
            var insertLoc = document.getElementById("mapResLoc");
            console.log("createMRContainer::finished");
            MRContainer = new TabContainerFrame();
-           MRContent = new _BaseWidget();
+           MRContent = new BaseWidget();
            MRContent.setTitle("地图资源容器");
            MRContent.setMap(map);
            MRContent.startup();
@@ -93,7 +94,7 @@ require([
             drawWidget.startup();
         };
         function createMapViewWidget() {
-            tocWidget = new _BaseWidget();
+            tocWidget = new BaseWidget();
             tocWidget.setTitle("可用地图资源");
             tocWidget.setMap(map);
             tocWidget.startup();

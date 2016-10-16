@@ -13,4 +13,8 @@
         location: location.pathname.replace(/\/[^/]+$/, "") + "/config"
     }]
 };
+
 console.log(dojoConfig.packages);
+
+
+
