@@ -4,13 +4,13 @@
     async: true,
     packages: [{
         "name": "UCMapWebGIS",
-        "location": location.pathname.replace(/\/[^/]+$/, "") + "UCMap/UCMapWebGIS"
+        "location": location.pathname.replace(/\/[^/]+$/, "") + "/UCMapWebGIS"
     }, {
         "name": "heatmap",
-        "location": location.pathname.replace(/\/[^/]+$/, "") + "UCMap/UCMapWebGIS/heatmap"
+        "location": location.pathname.replace(/\/[^/]+$/, "") + "/UCMapWebGIS/heatmap"
     }, {
         name: "config",
-        location: location.pathname.replace(/\/[^/]+$/, "") + "UCMap/config"
+        location: location.pathname.replace(/\/[^/]+$/, "") + "/config"
     }]
 };
 console.log(dojoConfig.packages);
