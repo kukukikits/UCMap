@@ -20,7 +20,7 @@ require([
     "UCMapWebGIS/widgets/MoveableWidgetFrame", "UCMapWebGIS/widgets/TabPane",
     "dijit/layout/TabContainer", "dijit/layout/ContentPane",
     "dijit/_TemplatedMixin",
-    "dojo/text!../UCMapWebGIS/widgets/templates/PanelTitle.html",
+    "dojo/text!UCMap/UCMapWebGIS/widgets/templates/PanelTitle.html",
     "config/commonConfig",
     "dojo/string","dijit/form/Form", "dijit/form/Button","dijit/form/ValidationTextBox",
     "dojo/domReady!"],
