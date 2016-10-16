@@ -55,7 +55,11 @@ require([
         var parentNode = document.getElementById("panelTop");
         parentNode.innerHTML = domNode; 
         //window.onload = widgetTopicPublish;window.onload在搜狗的兼容模式下会发生冲突，导致widgetTopicPublish函数调用不成功，改用直接调用函数就解决问题了
-        map = new Map("mapDiv");
+        map = new Map("mapDiv",{
+            center: [-118, 34.5],
+            zoom: 8,
+            basemap: "topo"
+        });
 
         
         
