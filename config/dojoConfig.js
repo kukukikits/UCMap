@@ -13,4 +13,4 @@
         location: location.pathname.replace(/\/[^/]+$/, "") + "UCMap/config"
     }]
 };
-//alert(dojoConfig.packages[1].location);
+console.log(dojoConfig.packages);
