@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>测试</title>
-    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.14/3.14/dijit/themes/tundra/tundra.css" />
-    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.14/3.14/esri/css/esri.css" />
-    <link rel="stylesheet" href="../UCMapWebGIS/widgets/themes/darkangel/darkangel.css" />
-    <link rel="stylesheet" href="../UCMapWebGIS/widgets/themes/darkangel/override.css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/3.18//dijit/themes/tundra/tundra.css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/3.18/esri/css/esri.css" />
+    <link rel="stylesheet" href="UCMap/UCMapWebGIS/widgets/themes/darkangel/darkangel.css" />
+    <link rel="stylesheet" href="UCMap/UCMapWebGIS/widgets/themes/darkangel/override.css" />
     <script>
         var dojoConfig = {
             locale: 'en',
@@ -18,18 +18,18 @@
             }]
         };
     </script>
-    <script src="http://localhost/arcgis_js_api/library/3.14/3.14/init.js"></script>
+    <script src="https://js.arcgis.com/3.18/"></script>
     <script>
 
         require(["dojo/parser", "dojo/_base/window", "dojo/dom-style",
             "esri/map", "esri/layers/ArcGISTiledMapServiceLayer",
-            "UCMapWebGIS/widgets/_BaseWidget", "UCMapWebGIS/widgets/MoveableWidgetFrame", "dojo/domReady!"],
+            "UCMapWebGIS/widgets/BaseWidget", "UCMapWebGIS/widgets/MoveableWidgetFrame", "dojo/domReady!"],
             function (parser, win, domStyle, Map, ArcGISTiledMapServiceLayer, _BaseWidget, MoveableWidgetFrame) {
             parser.parse();
 
             var map = new Map("mapDiv");
-                ////server.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer, { displayLevels: [0, 1, 2, 3, 4, 5, 6, 7] }
-            var agoServiceURL = "http://zj-pc/arcgis/rest/services/洛阳水体/MapServer";
+     
+            var agoServiceURL = "http://server.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer";
             var agoLayer = new ArcGISTiledMapServiceLayer(agoServiceURL);
             map.addLayer(agoLayer);
 
