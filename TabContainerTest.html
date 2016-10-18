@@ -2,30 +2,18 @@
 <html>
 <head>
 
-    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.14/3.14/dijit/themes/claro/claro.css">
-
-    <script src="config/dojoConfig.js"></script>
-    <script src='http://localhost/dojo-release-1.10.4/dojo/dojo.js'>        //localhost/arcgis_js_api/library/3.14/3.14/init.js</script>
-
+    <link rel="stylesheet" href="https://js.arcgis.com/3.18//dijit/themes/claro/claro.css">
+    <script src="UCMap/config/dojoConfig.js"></script>
+    <script src='https://js.arcgis.com/3.18/'></script>
     <script>
         var tab = null;
         require(["dojo/parser","dojo/_base/declare", "dijit/layout/TabContainer", "dijit/layout/ContentPane", "dojo/domReady!"],
             function (parser,declare, TabContainer, ContentPane) {
-           
-                parser.parse();
-             
-                
-               
-               
-           
+                parser.parse();       
         });
-       
-                
-          
     </script>
 </head>
 <body class="claro">
-
     <div style="width: 350px; height: 300px">
         <div data-dojo-type="dijit/layout/TabContainer" style="width: 100%; height: 100%;">
             <div data-dojo-type="dijit/layout/ContentPane" title="My first tab" data-dojo-props="selected:true">
